@@ -6,9 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        text-align: center;
+        padding: 40px 0;
+        background: #EBF0F5;
+    }
+
+    .blue-button {
+        display: inline-block;
+        font-family: Whitney, "Open Sans", Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 11pt;
+        border-radius: 3px;
+        cursor: pointer;
+        height: 45px;
+        width: 250px;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .blue-button {
+        background-color: #7289da;
+        border: 2px solid #7289da;
+        color: #fff;
+    }
+
+    .wrapper-buttons {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+    }
+
+    .wrapper-buttons > * {
+        margin-bottom: 10px;
+    }
+
+    .wrapper-buttons > *:first-child {
+        margin-top: 10px;
+    }
+
+    .wrapper-buttons > *:last-child {
+        margin-bottom: 0px;
+    }
+
+    .blue-button:hover {
+        transform: translateY(1px);
+    }
+
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
 <body>
     <form action="http://localhost:3000/auth/discord">
-        <input type="submit" value="Discord!" />
+        <div class="wrapper-buttons center">
+            <input class="blue-button" type="submit" value="Discord!" />
+        </div>
     </form>
 </body>
 <script>

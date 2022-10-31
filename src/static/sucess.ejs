@@ -40,15 +40,27 @@
         display: inline-block;
         margin: 0 auto;
     }
+
+    .avatar {
+        border-radius: 50%;
+        margin:0 auto;
+    }
 </style>
 
 <body>
     <div class="card">
-        <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
-            <i class="checkmark">✓</i>
+        <div style="border-radius:200px; height:150px; width:150px; background: #F8FAF5; margin:0 auto; display: flex; justify-content: center; align-items: center;">
+            <img class="avatar" src=<%= AVATAR_URL %>  alt="AVATAR_URL">
         </div>
         <h1>Sucesso!</h1>
-        <p>Logou no discord!<br /> Meu deus que código feio que eu fiz(copiei kk)!</p>
+        <p>Logou no discord!
+            <br /> ID: <%= ID %> 
+            <br /> USERNAME: <%= USERNAME %> 
+            <br /> EMAIL: <%= EMAIL %> 
+            <br /> VERIFIED: <%= VERIFIED %> 
+            <br /> PROVIDER: <%= PROVIDER %> 
+        </p>
+
     </div>
 </body>
 
